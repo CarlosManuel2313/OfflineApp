@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+        xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="OfflineApp.MainPage"
+    Title="Verificar Internet">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="Gray" Offset="0.0" />
+            <!-- naranja -->
+            <GradientStop Color="LightGrey" Offset="1.0" />
+            <!-- rosa -->
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <VerticalStackLayout Spacing="25" Padding="30">
+        <Label x:Name="EstadoConexionLabel"
+               Text="Verificando conexión..."
+               FontSize="30"
+               HorizontalOptions="Center"
+               TextColor="Black"/>
+    </VerticalStackLayout>
+</ContentPage>
